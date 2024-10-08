@@ -1,0 +1,18 @@
+﻿@page "/"
+@using Test.Entities
+@using Test_RfidControllers
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+Your tag is: @WriteTag()
+
+@{
+    async Task<Tag> WriteTag()
+    {
+        var writer = new Writer();
+        var tag = await writer.Write(22);
+        return tag;
+    }
+}

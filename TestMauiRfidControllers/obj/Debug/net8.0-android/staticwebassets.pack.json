@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\TestMauiRfidControllers\\TestMauiRfidControllers\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\TestMauiRfidControllers.styles.css",
+      "PackagePath": "staticwebassets\\TestMauiRfidControllers.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\TestMauiRfidControllers\\TestMauiRfidControllers\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\TestMauiRfidControllers\\TestMauiRfidControllers\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\TestMauiRfidControllers\\TestMauiRfidControllers\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\TestMauiRfidControllers\\TestMauiRfidControllers\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\TestMauiRfidControllers\\TestMauiRfidControllers\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.TestMauiRfidControllers.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.build.TestMauiRfidControllers.props",
+      "PackagePath": "build\\TestMauiRfidControllers.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.buildMultiTargeting.TestMauiRfidControllers.props",
+      "PackagePath": "buildMultiTargeting\\TestMauiRfidControllers.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.buildTransitive.TestMauiRfidControllers.props",
+      "PackagePath": "buildTransitive\\TestMauiRfidControllers.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

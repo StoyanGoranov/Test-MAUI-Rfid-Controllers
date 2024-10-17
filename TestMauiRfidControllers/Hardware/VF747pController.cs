@@ -9,14 +9,12 @@ public class VupVF747pController : RfidController
     private const int MAX_POWER = 27;
     private NetVupReader reader;
     private readonly string ipAddress;
-	private readonly ILogger logger;
 
     protected override string Device => "VF747p";
 
-    public VupVF747pController(string ipAddress, ILogger logger, TimeSpan? throttle = null) : base(throttle)
+    public VupVF747pController(string ipAddress, TimeSpan? throttle = null) : base(throttle)
     {
         this.ipAddress = ipAddress;
-		this.logger = logger;
 		reader = new NetVupReader(ipAddress, 1969, transport_protocol.tcp);
     }
 
@@ -130,7 +128,7 @@ public class VupVF747pController : RfidController
                 this.Reconnect();
                 reconnectTimer.Stop();
                 sb.AppendLine($"Reconnected after '{reconnectTimer.ElapsedMilliseconds}'");
-                this.logger.Log("VF747p-disconnected", sb.ToString());
+                //this.logger.Log("VF747p-disconnected", sb.ToString());
             }
 
             if (tagsBytes.Success)

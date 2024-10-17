@@ -6,9 +6,36 @@
 
 Welcome to your new app.
 
-Your tag is: @WriteTag()
+@* Your tag is: @WriteTag() *@
 
-@{
+@code{
+
+    protected override async void OnInitialized()
+    {
+        Connect();
+    }
+    IEnumerable<string> _tags = new List<string>();
+    // async Task<Tag> WriteTag()
+    // {
+    //     var writer = new Writer();
+    //     var tag = await writer.Write(22);
+    //     return tag;
+    // }
+
+    async void Connect()
+    {
+        var reader = new Reader();
+        await reader.StartReading();
+    }
+
+    async Task<IEnumerable<string>> ReadTags()
+    {
+        var reader = new Reader();
+        await reader.StartReading();
+        var tags = reader.ProcessTags();
+        return tags;
+    }
+
     async Task<Tag> WriteTag()
     {
         var writer = new Writer();
